@@ -1,0 +1,1 @@
+WITH days AS (SELECT generate_series('2022-01-01','2022-01-10','1 day') AS missing_date) SELECT missing_date FROM days WHERE missing_date NOT IN (SELECT visit_date FROM person_visits WHERE person_id IN (1,2)) ORDER BY missing_date

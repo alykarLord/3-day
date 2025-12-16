@@ -1,0 +1,1 @@
+SELECT DISTINCT p.name FROM people p JOIN orders o ON p.id = o.person_id WHERE p.gender = 'male' AND p.city IN ('Moscow', 'Samara') AND o.pizza_name IN ('pepperoni', 'mushroom') ORDER BY p.name DESC;

@@ -1,0 +1,1 @@
+SELECT m.pizza_name, m.pizzeria_name FROM menu m JOIN people p ON p.id = m.person_id WHERE p.name IN ('Denis', 'Anna') ORDER BY m.pizza_name, m.pizzeria_name;

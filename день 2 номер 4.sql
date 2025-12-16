@@ -1,0 +1,1 @@
+SELECT p.name AS pizza_name, piz.name AS pizzeria_name, p.price FROM pizza p JOIN pizzeria piz ON p.pizzeria_id = piz.id WHERE p.name IN ('mushroom pizza', 'pepperoni pizza') ORDER BY p.name, piz.name;

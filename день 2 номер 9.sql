@@ -1,0 +1,1 @@
+SELECT DISTINCT p.name FROM people p WHERE p.gender = 'female' AND p.id IN (SELECT o1.person_id FROM orders o1 WHERE o1.pizza_name = 'pepperoni') AND p.id IN (SELECT o2.person_id FROM orders o2 WHERE o2.pizza_name = 'cheese') ORDER BY p.name;

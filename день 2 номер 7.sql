@@ -1,0 +1,1 @@
+SELECT DISTINCT v.pizzeria_name FROM visits v JOIN orders o ON v.visitor_name = o.visitor_name WHERE v.visitor_name = 'Dmitriy' AND v.visit_date = '2022-01-08' AND o.pizza_price < 800;
